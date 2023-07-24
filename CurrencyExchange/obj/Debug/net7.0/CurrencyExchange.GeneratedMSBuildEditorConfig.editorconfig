@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\sahib\source\repos\ASP\CurrencyExchange\CurrencyExchange
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/sahib/source/repos/ASP/CurrencyExchange/CurrencyExchange/Pages/Converter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udmVydGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sahib/source/repos/ASP/CurrencyExchange/CurrencyExchange/Pages/Currency.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VycmVuY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
