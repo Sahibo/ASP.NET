@@ -8,13 +8,6 @@ namespace CurrencyExchange.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
-    {
-        _logger = logger;
-    }
-
     [BindProperty(Name = "result")]
     public string Result { get; set; }
     [BindProperty(Name = "userInput")]
