@@ -1,0 +1,33 @@
+.line-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.converter-line {
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.line-list {
+    align-items: center;
+    display: flex;
+    
+}
+
+.list-element {
+    display: list-item;
+    margin: 25px;
+}
+
+.input-div {
+    
+}
+
+.list-element label {
+    margin: 10px 10px 10px 0;
+}

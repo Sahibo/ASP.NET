@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yjSDmUgUvN6V2sTRiPtmczm/xe5oJj2o9UgLfL3fw4g=",
+  "Hash": "AGIzQnuK917U0wsRUAbH3A3W9dz4m/ClzEo8xQb/qd4=",
   "Source": "CurrencyExchange",
   "BasePath": "_content/CurrencyExchange",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\sahib\\source\\repos\\ASP\\CurrencyExchange\\CurrencyExchange\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CurrencyExchange.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\sahib\\source\\repos\\ASP\\CurrencyExchange\\CurrencyExchange\\wwwroot\\css\\converter.css",
+      "SourceId": "CurrencyExchange",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sahib\\source\\repos\\ASP\\CurrencyExchange\\CurrencyExchange\\wwwroot\\",
+      "BasePath": "_content/CurrencyExchange",
+      "RelativePath": "css/converter.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\converter.css"
     },
     {
       "Identity": "C:\\Users\\sahib\\source\\repos\\ASP\\CurrencyExchange\\CurrencyExchange\\wwwroot\\css\\site.css",

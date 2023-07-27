@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CurrencyExchange.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sahib\\source\\repos\\ASP\\CurrencyExchange\\CurrencyExchange\\wwwroot\\css\\converter.css",
+      "PackagePath": "staticwebassets\\css\\converter.css"
+    },
+    {
       "Id": "C:\\Users\\sahib\\source\\repos\\ASP\\CurrencyExchange\\CurrencyExchange\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

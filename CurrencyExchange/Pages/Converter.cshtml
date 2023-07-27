@@ -8,32 +8,42 @@
 <div class="inner-container">
     <div class="converter-div">
         <div class="converter-line">
-            <ul class="line-list">
-                <li class="list-element">
-                    <label>From</label>
-                    <div>
-                        <input id="fromBox" type="text" placeholder="Type to search..."/>
-                    </div>
-                </li>
+            <form method="post" class="form">
+                <ul class="line-list">
+                    <li class="list-element">
+                        <label>From</label>
+                        <div class="input-div">
+                            <input id="fromBox" type="text" placeholder="Type to search..." />
+                            <datalist id="Currency">
+                                @foreach (var item in Model.Valutes)
+                                {
+                                    <option value="@item.Code" />
+                                }
+                            </datalist>
+                        </div>
+                    </li>
 
-                <li class="list-element">
-                    <label>To</label>
-                    <div>
-                        <input id="toBox" type="text" placeholder="Type to search..."/>
-                    </div>
-                </li>
-            </ul>
+                    <li class="list-element">
+                        <label>To</label>
+                        <div class="input-div">
+                            <input id="toBox" type="text" placeholder="Type to search..."/>
+                        </div>
+                    </li>
+                </ul>
+            </form>
         </div>
 
         <div class="converter-line">
             <ul class="line-list">
                 <li class="list-element">
                     <label>Amount</label>
-                    <div>
+                    <div class="input-div">
                         <input id="amountBox" type="text" placeholder="0.00"/>
                     </div>
                 </li>
-
+                
+                
+                
                 <li class="list-element">
                     <button class="convertBtn">Convert</button>
                 </li>
