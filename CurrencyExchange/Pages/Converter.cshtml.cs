@@ -12,7 +12,7 @@ public class Converter : PageModel
     private readonly ConverterService _converterService;
 
     public List<ValuteModel> Valutes { get; set; }
-    public ValCursModel? Model { get; set; }
+    public ValCursModel? Response { get; set; }
     public string? Result { get; set; }
     public decimal Value { get; set; }
     public string? Code { get; set; }
@@ -38,11 +38,11 @@ public class Converter : PageModel
         Value = decimal.Parse(Request.Form["Value"]!);
         Code = Request.Form["Code"];
 
-        if (Model != null)
+        if (Response != null)
         {
             try
             {
-                Result = _converterService.ConvertCurrency(Value, Code, Model).ToString();
+                Result = _converterService.ConvertCurrency(Value, Code, Response).ToString();
             }
             catch (ArgumentException ex)
             {
@@ -56,6 +56,6 @@ public class Converter : PageModel
     private async Task LoadData()
     {
         var currencyService = new CurrencyService();
-        Model = await currencyService.GetConverterInfoAsync();
+        Response = await currencyService.GetConverterInfoAsync();
     }
 }

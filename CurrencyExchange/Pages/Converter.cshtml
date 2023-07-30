@@ -14,12 +14,21 @@
                         <label>From</label>
                         <div class="input-div">
                             <input id="fromBox" type="text" placeholder="Type to search..." />
-                            <datalist id="Currency">
-                                @foreach (var item in Model.Valutes)
+                            <select id="Currency">
+                                @if (@Model.Response.ValTypes[1].Type == "Xarici valyutalar")
                                 {
-                                    <option value="@item.Code" />
+                                    @for (int i = 0; i < Model.Response.ValTypes[1].Valutes.Count; i++)
+                                    {
+                                        var item = Model.Response.ValTypes[1].Valutes;
+                                        @for (int j = 0; j < @item.Count; j++)
+                                        {
+                                            <option>@item[j].Code</option>    
+                                        }
+                                         
+                                    }
                                 }
-                            </datalist>
+                               
+                            </select>
                         </div>
                     </li>
 
