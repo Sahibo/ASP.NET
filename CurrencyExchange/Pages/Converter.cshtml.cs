@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using CurrencyExchange.Models;
@@ -14,8 +15,16 @@ public class Converter : PageModel
     public List<ValuteModel> Valutes { get; set; }
     public ValCursModel? Response { get; set; }
     public string? Result { get; set; }
+    
+    [Required(ErrorMessage = "Please select a 'From' currency.")]
+    public string? FromCode { get; set; }
+    
+    [Required(ErrorMessage = "Please select a 'To' currency.")]
+    public string? ToCode { get; set; }
+    
+    [Required(ErrorMessage = "Please enter an amount.")]
     public decimal Value { get; set; }
-    public string? Code { get; set; }
+    
 
     public Converter()
     {
@@ -35,21 +44,27 @@ public class Converter : PageModel
 
         await LoadData();
 
-        Value = decimal.Parse(Request.Form["Value"]!);
-        Code = Request.Form["Code"];
-
-        if (Response != null)
+        if (decimal.TryParse(Request.Form["Value"], out decimal value))
         {
-            try
+            FromCode = Request.Form["FromCode"];
+            ToCode = Request.Form["ToCode"];
+
+            if (Response != null)
             {
-                Result = _converterService.ConvertCurrency(Value, Code, Response).ToString();
-            }
-            catch (ArgumentException ex)
-            {
-                ModelState.AddModelError(string.Empty, ex.Message);
+                try
+                {
+                    Result = _converterService.ConvertCurrency(value, FromCode, ToCode, Response).ToString();
+                }
+                catch (ArgumentException ex)
+                {
+                    ModelState.AddModelError(string.Empty, ex.Message);
+                }
             }
         }
-
+        else
+        {
+            ModelState.AddModelError("Value", "Please enter a valid amount.");
+        }
         return Page();
     }
 
