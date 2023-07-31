@@ -1,0 +1,64 @@
+CREATE TABLE Cars (
+    CarID INT PRIMARY KEY IDENTITY(1,1),
+    Make NVARCHAR(255),
+    Model NVARCHAR(255),
+    ShowRoomId INT,
+    Year DATE,
+    VIN NVARCHAR(255),
+    BodyTypeID INT,
+    Mileage INT,
+    CityID INT,
+    ColorID INT,
+    EngineVolume INT,
+    WheelDriveTypeID INT,
+    FuelTypeID INT,
+    TransmissionTypeID INT,
+    HorsePower INT,
+    PassengerCount INT,
+    Price INT,
+    PhoneNumber NVARCHAR(20)
+);
+
+
+CREATE TABLE Showrooms (
+    ShowroomID INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(255),
+    Address NVARCHAR(255),
+    PhoneNumber NVARCHAR(20)
+);
+
+
+CREATE TABLE BodyTypes (
+    BodyTypeID INT PRIMARY KEY IDENTITY(1,1),
+    TypeName NVARCHAR(255)
+);
+
+
+CREATE TABLE Cities (
+    CityID INT PRIMARY KEY IDENTITY(1,1),
+    CityName NVARCHAR(255)
+);
+
+
+CREATE TABLE Colors (
+    ColorID INT PRIMARY KEY IDENTITY(1,1),
+    ColorName NVARCHAR(255)
+);
+
+CREATE TABLE WheelDriveTypes (
+    WheelDriveTypeID INT PRIMARY KEY IDENTITY(1,1),
+    TypeName NVARCHAR(255)
+);
+
+CREATE TABLE FuelTypes (
+    FuelTypeID INT PRIMARY KEY IDENTITY(1,1),
+    TypeName NVARCHAR(255)
+);
+
+
+CREATE TABLE TransmissionTypes (
+    TransmissionTypeID INT PRIMARY KEY IDENTITY(1,1),
+    TypeName NVARCHAR(255)
+);
+
+
