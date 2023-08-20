@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+@if (Request.Method == "GET")
+{
+    <form method="get">
+        <label for="movieTitle">Movie Title:</label>
+        <input type="text" id="movieTitle" name="movieTitle" />
+
+        <button type="submit">Search</button>
+    </form>
+}
+
+@if (Request.Method == "GET" && Model.ImdbResponse!= null)
+{
+    @if (Model.ImdbResponse.Datas != null)
+    {
+        @if (Model.ImdbResponse.Datas.Count > 0)
+        {
+            <ul>
+                @foreach (var result in Model.ImdbResponse.Datas)
+                {
+                    <li>
+                        <h2>Title: @result.l</h2>
+                    </li>
+                }
+            </ul>
+        }
+
+    }
+    else
+    {
+        <p>No results found.</p>
+    }
+}
+else if (Request.Method == "GET")
+{
+    <p>No results found.</p>
+}
