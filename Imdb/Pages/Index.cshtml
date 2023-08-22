@@ -17,15 +17,15 @@
 
 @if (Request.Method == "GET" && Model.ImdbResponse!= null)
 {
-    @if (Model.ImdbResponse.Datas != null)
+    @if (Model.ImdbResponse.results != null)
     {
-        @if (Model.ImdbResponse.Datas.Count > 0)
+        @if (Model.ImdbResponse.results.Count > 0)
         {
             <ul>
-                @foreach (var result in Model.ImdbResponse.Datas)
+                @foreach (var result in Model.ImdbResponse.results)
                 {
                     <li>
-                        <h2>Title: @result.l</h2>
+                        <h2>Title: @result.title</h2>
                     </li>
                 }
             </ul>

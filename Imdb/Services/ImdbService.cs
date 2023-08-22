@@ -8,11 +8,9 @@ public class ImdbService
     public async Task<ImdbModel> GetMovieInfoAsync(string title)
     {
         HttpClient client = new();
-        //title = "spiderman";
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Get,
-           
             RequestUri = new Uri($"https://imdb8.p.rapidapi.com/title/find?q={title}"),
             Headers =
             {
