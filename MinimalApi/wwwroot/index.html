@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Quotes</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <h1>Print Words</h1>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" id="getAllBtn" onclick="showContainer('getAllContainer')"><label>Quotes</label></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="getFavBtn" onclick="showContainer('getFavContainer')"><label>Favorites</label></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="postAddBtn" onclick="showContainer('postAddContainer')"><label>Add</label>Add</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="card" id="getAllContainer" style="display: none">
+        <header>All quotes</header>
+    
+        <ul id="quotes-list"></ul>
+    </div>
+    
+    <div class="card" id="getFavContainer" style="display: none">
+        <header>Favorite quotes</header>
+    </div>
+    
+    <div class="card" id="postAddContainer" style="display: none">
+        <header>Add quotes</header>
+    
+        <input class="form-control" id="postQuoteTextInput" placeholder="Enter quote">
+        <input class="form-control" id="postAuthorInput" placeholder="Enter the author">
+    
+        <button id="postBtn" type="button" class="btn btn-primary">Add</button>
+    </div>
+
+    <script src="scrypt.js"></script>
+</body>
+</html>

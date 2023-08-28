@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 1,
+    "QuoteText": "If you want to win, you're going to have to use your head.",
+    "Author": "Thors (Vinland Saga)",
+    "IsFavorite": true
+  },
+  {
+    "Id": 2,
+    "QuoteText": "Alea iacta est. (The die is cast.)",
+    "Author": "Julius Caesar",
+    "IsFavorite": false
+  },
+  {
+    "Id": 3,
+    "QuoteText": "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "Author": "Winston Churchill",
+    "IsFavorite": false
+  },
+  {
+    "Id": 4,
+    "QuoteText": "The only limit to our realization of tomorrow will be our doubts of today.",
+    "Author": "Franklin D. Roosevelt",
+    "IsFavorite": false
+  },
+  {
+    "Id": 5,
+    "QuoteText": "Veni, vidi, vici. (I came, I saw, I conquered.)",
+    "Author": "Julius Caesar",
+    "IsFavorite": false
+  },
+  {
+    "Id": 6,
+    "QuoteText": "He who has a why to live can bear almost any how.",
+    "Author": "Friedrich Nietzsche",
+    "IsFavorite": false
+  },
+  {
+    "Id": 7,
+    "QuoteText": "No matter how deep the night, it always turns to day, eventually.",
+    "Author": "Musashi Miyamoto (Vagabond)",
+    "IsFavorite": false
+  },
+  {
+    "Id": 8,
+    "QuoteText": "Life is what happens when you're busy making other plans.",
+    "Author": "John Lennon",
+    "IsFavorite": false
+  }
+]

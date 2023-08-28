@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sahib\\source\\repos\\ASP\\MinimalApi\\MinimalApi\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\sahib\\source\\repos\\ASP\\MinimalApi\\MinimalApi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\sahib\\source\\repos\\ASP\\MinimalApi\\MinimalApi\\wwwroot\\scrypt.js",
+      "PackagePath": "staticwebassets\\scrypt.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MinimalApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MinimalApi.props",
+      "PackagePath": "build\\MinimalApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MinimalApi.props",
+      "PackagePath": "buildMultiTargeting\\MinimalApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MinimalApi.props",
+      "PackagePath": "buildTransitive\\MinimalApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
